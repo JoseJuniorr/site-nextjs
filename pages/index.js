@@ -1,27 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import Head from 'next/head'
 
 import {
     Container,
-    Collapse,
-    Navbar,
-    NavbarToggler,
-    NavbarBrand,
-    Nav,
-    NavItem,
-    NavLink,
-    UncontrolledDropdown,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem,
-    NavbarText,
-    Row
+    Jumbotron,
+    Button
+
 } from 'reactstrap';
 
-
-
-import { Jumbotron, Button } from 'reactstrap';
+import Header from '../components/Header'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -31,9 +19,6 @@ library.add(fas)
 
 
 export default function HomePage() {
-    const [isOpen, setIsOpen] = useState(false);
-
-    const toggle = () => setIsOpen(!isOpen);
 
     return <div>
 
@@ -42,35 +27,9 @@ export default function HomePage() {
                 <title>home - next site</title>
                 <meta name="description" content="Site com next js" />
             </Head>
-
-            <Navbar color="dark" dark expand="md" className="fixed-top">
-                <Container>
-                    <NavbarBrand href="/">Next js</NavbarBrand>
-                    <NavbarToggler onClick={toggle} />
-                    <Collapse isOpen={isOpen} navbar>
-                        <Nav className="mr-auto" navbar>
-                            <NavItem>
-                                <NavLink href="/#inicio" >Inicio</NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink href="/#servicos">Serviços</NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink href="/#portfolio" >Portfólio</NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink href="/">Contato</NavLink>
-                            </NavItem>
-                            <UncontrolledDropdown nav inNavbar>
-                            </UncontrolledDropdown>
-                        </Nav>
-
-                    </Collapse>
-                </Container>
-            </Navbar>
         </div>
 
-
+        <Header />
 
         <Jumbotron fluid className="desc-top">
             <style>
