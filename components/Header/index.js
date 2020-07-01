@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import { Link, animateScroll as scroll } from "react-scroll";
+
 import {
     Container,
     Collapse,
@@ -28,10 +30,10 @@ const Header = () => {
                     <Collapse isOpen={isOpen} navbar>
                         <Nav className="mr-auto" navbar>
                             <NavItem>
-                                <NavLink href="/#inicio" >Inicio</NavLink>
+                            <NavLink href="/#inicio" >Inicio</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="/#servicos">Serviços</NavLink>
+                                <NavLink href="/#servicos" >Serviços</NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink href="/#portfolio" >Portfólio</NavLink>
@@ -46,9 +48,6 @@ const Header = () => {
                     </Collapse>
                 </Container>
             </Navbar>
-
-
-
         </div>
     )
 
