@@ -181,11 +181,11 @@ export default function HomePage() {
                     </div>
                 </div>
                 <div className="col mb-4">
-                    <div class="card">
+                    <div className="card">
                         <img src="portfolio_tres.jpg" class="card-img-top" alt="portfolio tres" />
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                        <div className="card-body">
+                            <h5 className="card-title">Card title</h5>
+                            <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
                         </div>
                     </div>
                 </div>
@@ -208,11 +208,11 @@ export default function HomePage() {
                     </div>
                 </div>
                 <div className="col mb-4">
-                    <div class="card">
-                        <img src="portfolio_tres.jpg" class="card-img-top" alt="portfolio tres" />
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                    <div className="card">
+                        <img src="portfolio_tres.jpg" className="card-img-top" alt="portfolio tres" />
+                        <div className="card-body">
+                            <h5 className="card-title">Card title</h5>
+                            <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
                         </div>
                     </div>
                 </div>
